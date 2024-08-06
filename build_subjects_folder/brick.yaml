@@ -1,0 +1,29 @@
+name: build_subjects_folder
+description: A new brick created with the Mason CLI.
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.57 <0.1.0"
+
+vars:
+  subject_name:
+    type: string
+    description: Name of the subject for which the folders are to be generated. 
+    default: subject
+    prompt: What's the name of this subject?
+  reference_books:
+    type: boolean
+    description: Whether this subject contains reference book.
+    default: false
+    prompt: Does this subject contains reference books?
+  projects:
+    type: boolean
+    description: Whether there is a project implementation in this subject.
+    default: false
+    prompt: Are you planning to implement project based on this subject ?
+  question_bank:
+    type: boolean
+    description: If the question bank is provided wrt to the current subject.
+    default: false
+    prompt: Is the question bank provided ?
